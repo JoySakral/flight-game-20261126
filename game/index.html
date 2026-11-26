@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sky Courier — Valley Run</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="overlay">
+    <div id="menu" class="panel">
+      <h1>SKY COURIER</h1>
+      <p class="tagline">Valley Run &middot; a pocket flight game</p>
+      <p class="brief">You are the courier of the Green Valley. Take off from
+      Meadowfield strip, thread the glowing rings, mind your fuel, and
+      bring her home on the far airstrip.</p>
+      <div class="missions">
+        <button class="mission" data-mission="0"><b>1 &middot; RING RUN</b><span>8 rings over the valley &middot; 3:00</span></button>
+        <button class="mission" data-mission="1"><b>2 &middot; ISLAND HOP</b><span>Rings to the far strip &middot; land it &middot; 4:00</span></button>
+        <button class="mission" data-mission="2"><b>3 &middot; CANYON COURIER</b><span>Low rings through the canyon &middot; tight fuel &middot; 3:30</span></button>
+      </div>
+      <p class="controls">W / S throttle &nbsp;&middot;&nbsp; &uarr; / &darr; pitch &nbsp;&middot;&nbsp;
+      &larr; / &rarr; roll &nbsp;&middot;&nbsp; mouse: steer &nbsp;&middot;&nbsp;
+      G gear &nbsp;&middot;&nbsp; B brakes &nbsp;&middot;&nbsp; P pause &nbsp;&middot;&nbsp; R restart</p>
+      <p class="hint">Click a mission, or press 1 / 2 / 3, to fly.</p>
+      <p class="credit">An original game &middot; art, sound and code made for this entry &middot; no network needed</p>
+    </div>
+    <div id="banner" class="hidden"></div>
+    <div id="endcard" class="panel hidden"></div>
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
